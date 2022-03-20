@@ -13,6 +13,9 @@ A Visual Studio 2022 Solution that creates an WPF based application that wraps a
 - [WebView2](https://docs.microsoft.com/en-us/microsoft-edge/webview2/)
 - [React](https://reactjs.org/)
 
+## Example Output
+![Screen Capture](./docs/MainWindow.png)
+
 ## Challenges
 ### Building the JavaScript application in Visual Studio
 A JavaScript project name with capital letters in the name caused build errors
@@ -39,3 +42,5 @@ Visual Studio does not have a UI for linking a folder.
 </ItemGroup>
 ```
 
+## TODO
+- Starting the WPF project is also running `npm start` rather than just building it
