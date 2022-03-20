@@ -18,10 +18,10 @@ A Visual Studio 2022 Solution that creates an WPF based application that wraps a
 
 ## Challenges
 ### Building the JavaScript application in Visual Studio
-A JavaScript project name with capital letters in the name caused build errors
+A JavaScript project name with capital letters caused build errors
 
 ### Setup the JavaScript application to build
-By default there is not build command defined
+By default there is no build command defined
 
 - Open project properties
 - Build > General > Build Command
