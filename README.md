@@ -3,9 +3,14 @@
 ## Description
 A Visual Studio 2022 Solution that creates an WPF based application that wraps a WebView2 component which loads a JavaScript application.
 
+## Install
+[install_win.zip](https://github.com/PhillipRC/WpfHostedJsApp/blob/main/install_win.zip?raw=true)
+
 ## Prerequisite
 - Windows 10+
 - Visual Studio 2022
+  - .NET 6
+  - [Microsoft Visual Studio Installer Projects 2022](https://marketplace.visualstudio.com/items?itemName=VisualStudioClient.MicrosoftVisualStudio2022InstallerProjects)
 - NodeJS 16
 
 ## References
