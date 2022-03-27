@@ -41,6 +41,3 @@ Visual Studio does not have a UI for linking a folder.
     </Content>
 </ItemGroup>
 ```
-
-## TODO
-- Starting the WPF project is also running `npm start` rather than just building it

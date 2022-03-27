@@ -34,8 +34,13 @@ namespace WpfHost
         async void InitializeAsync()
         {
 
-            // wait for the view to initialize
-            await webView.EnsureCoreWebView2Async(null);
+            // create envrionment where the UserDataFolder is not in the Program folder
+            var env = await CoreWebView2Environment.CreateAsync(null, "c://temp");
+
+             // wait for the view to initialize
+             await webView.EnsureCoreWebView2Async(env);
+
+            string userDataFolder2 = webView.CoreWebView2.Environment.UserDataFolder;
 
             // handle when navigation is complete
             webView.NavigationCompleted += WebView_NavigationCompleted;
@@ -49,6 +54,7 @@ namespace WpfHost
 
             // load file web app from mapped folder
             webView.Source = new Uri("http://app.example/index.html");
+
 
         }
 
