@@ -22,4 +22,8 @@
     <Folder Include="jsapp\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Globals\Globals.csproj" />
+  </ItemGroup>
+
 </Project>

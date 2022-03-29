@@ -5,12 +5,15 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfHost", "WpfHost\WpfHost.csproj", "{143EACC0-5384-4474-81B9-70999506B161}"
 	ProjectSection(ProjectDependencies) = postProject
+		{66CFA130-BB33-4A9B-A9DC-4FB3ECA15DDD} = {66CFA130-BB33-4A9B-A9DC-4FB3ECA15DDD}
 		{1B36F06D-8ED0-4913-8EE1-5CE31CEAA689} = {1B36F06D-8ED0-4913-8EE1-5CE31CEAA689}
 	EndProjectSection
 EndProject
 Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "jsapp", "jsapp\jsapp.esproj", "{1B36F06D-8ED0-4913-8EE1-5CE31CEAA689}"
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "WpfHostedJsAppSetup", "WpfHostedJsAppSetup\WpfHostedJsAppSetup.vdproj", "{19F47639-D0BD-4A45-86B4-9EBBB0E6F07E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Globals", "Globals\Globals.csproj", "{66CFA130-BB33-4A9B-A9DC-4FB3ECA15DDD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +32,10 @@ Global
 		{19F47639-D0BD-4A45-86B4-9EBBB0E6F07E}.Debug|Any CPU.ActiveCfg = Release
 		{19F47639-D0BD-4A45-86B4-9EBBB0E6F07E}.Release|Any CPU.ActiveCfg = Release
 		{19F47639-D0BD-4A45-86B4-9EBBB0E6F07E}.Release|Any CPU.Build.0 = Release
+		{66CFA130-BB33-4A9B-A9DC-4FB3ECA15DDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66CFA130-BB33-4A9B-A9DC-4FB3ECA15DDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66CFA130-BB33-4A9B-A9DC-4FB3ECA15DDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66CFA130-BB33-4A9B-A9DC-4FB3ECA15DDD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

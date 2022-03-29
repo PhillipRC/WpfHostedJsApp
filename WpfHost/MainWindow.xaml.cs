@@ -4,6 +4,8 @@ using System.Windows.Controls;
 using Microsoft.Web.WebView2.Core;
 using System;
 using Microsoft.Web.WebView2.Wpf;
+using System.IO;
+using Globals;
 
 namespace WpfHost
 {
@@ -12,9 +14,18 @@ namespace WpfHost
     /// </summary>
     public partial class MainWindow : Window
     {
+        public string AppDataFolder;
+
         public MainWindow()
         {
             InitializeComponent();
+
+            // set folder to store app data
+            AppDataFolder = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+                Globals.AppData.Folder
+                );
+
             // subscribe to unload event
             this.Unloaded += CardListDisplayControl_Unloaded;
             InitializeAsync();
@@ -35,7 +46,7 @@ namespace WpfHost
         {
 
             // create envrionment where the UserDataFolder is not in the Program folder
-            var env = await CoreWebView2Environment.CreateAsync(null, "c://temp");
+            var env = await CoreWebView2Environment.CreateAsync(null, AppDataFolder);
 
              // wait for the view to initialize
              await webView.EnsureCoreWebView2Async(env);
